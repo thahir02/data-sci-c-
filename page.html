@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPP</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <div class="content">
+        <details>
+            <summary class="df">
+                Introduction
+            </summary>
+            <h3>
+                Terminologies
+            </h3>
+            <ul>
+                <li>
+                    A computer program is a sequence of statements designed to a accomplish a certain task.
+                </li>
+                <li>
+                    Programming is the creation of a program.
+                </li>
+                <li>
+                    Syntax are the rules that specify if a statement/instruction is legal.
+                </li>
+                <li>
+                    A programming language is a set of symbols along with rules governing the use of those symbols.
+                </li>
+            </ul>
+            <h3>
+                C++ Program Basics
+            </h3>
+            <ul>
+                <li>
+                    Programming instructions must be written according to syntax rules.
+                </li>
+                <li>
+                    The complier is responsible for converting the code to machine level language.
+                </li>
+                <li>
+                    Complier checks that the program follows syntax rules.
+                </li>
+                <li>
+                    A subprogram is a part of a program/block of statements that perform a certain task.
+                </li>
+                <li>
+                    A function is a subprogram written to promote modularity and to aviod repetition of code.
+                </li>
+                <li>
+                    Every C++ Program has ONE and ONLY function called main().
+                </li>
+            </ul>
+            <h3>
+                Tokens,Identifiers,Keywords
+            </h3>
+            <dd class="sdf">Tokens</dd>
+            <ul>
+                <li>
+                    A token is the smallest individual program unit.
+                </li>
+                <li>
+                    Tokens can be divided into special symbols,word symbols and identifiers.
+                </li>
+                <ol type="i">
+                    <li class="sdf">
+                    special symbols
+                    </li>
+                        <ul>
+                            <li>
+                               These symbols include mathematical symbols and puncuation marks. 
+                            </li>
+                            <li>
+                                A blank space is also is also a special symbol.
+                                <br>
+                                For example
+                                <pre>
+                                    + / - * < > <= >= ? , ; . 
+                                </pre>
+                            </li>
+                        </ul>
+                    <li class="sdf">
+                        word symbols
+                    </li>
+                    <ul>
+                        <li>
+                            These are called reserved words or keywords.
+                        </li>
+                        <li>
+                            Each reserved word has a specific meaning for the complier and cannot be used otherwise.
+                        </li>
+                        <li>
+                            Reserved words are always lowercase.
+                            <br>For example
+                            <pre>
+                                int,float,double,char,void,return,etc
+                            </pre>
+                            There are several reserved words in c++.
+                        </li>
+                    </ul>
+                    <li class="sdf">
+                        Identifiers
+                    </li>
+                    <ul>
+                        <li>
+                            Identifiers are names for variables,constants and functions.
+                        </li>
+                        <li>
+                            They can consist of only letters,digits or underscore character.
+                        </li>
+                        <li>
+                            They MUST begin with a letter or an underscore character.
+                        </li>
+                        <li>
+                            In c++,identifiers are case sensitive,i.e. for example var1 is different from Var1.
+                        </li>
+                        <li>
+                            keywords cannot be used as an identifier.
+                        </li>
+                        <li>
+                            Example identifiers 
+                            <pre>
+                                name,salary,var,a,hours,t_min,etc
+                            </pre>
+                        </li>
+                    </ul>
+                </ol>
+            </ul>
+            <h3>
+                Layout of a C++
+            </h3>
+            <ul>
+                <li>
+                    Each c++ program flie will have extension as cpp.
+                </li>
+            </ul>
+            <pre>
+                /*
+                 Used to comment multiple lines.It is use to explain the function,its author,the inputs it takes,the operations it performs and the output it gives,etc.
+                */
+                //Used to comment single line.
+                let us see the simple example of c++ program
+                /*
+                DOCUMENTATION ABOUT THE PROGRAM/FILE.
+                */
+                //Pre processor Directives :Macro definitions,include files etc.
+                #include &lt;iostrem&gt;
+                #define VAR 10
+                using namespace std;
+                //The program
+                int main(){
+                    //Variable Declaration
+                    String var1 = "Welcome to c++";
+                    //block of statements
+                    cout << var1 << end1;
+                    return 0;
+                }
+            </pre>
+        </details>
+        <details>
+            <summary class="df">What is C++</summary>
+            <h3>
+               Introduction to C++
+            </h3> 
+               <ul>
+                <li>
+                   C++ is a general Purpose Programming Language created by <strong class="sdf">Bjarne Stroustrup</strong>.
+                </li>
+                <li>
+                    Initially called C with classes.
+                </li>
+                <li>
+                    Introduces Object Oriented Programming to C language.
+                </li>
+               </ul>
+            <h3>
+                Features of C++
+            </h3>
+                <ul>
+                    <li>
+                        It is very fast.
+                    </li>
+                    <li>
+                        It is simple.
+                    </li>
+                    <li>
+                        It is Object Oriented.
+                    </li>
+                    <li>
+                        It is Complied etc,
+                    </li>
+                </ul>
+            <h3>
+                Uses of C++
+            </h3>
+                <ul>
+                    <li>
+                        It is used in Embedded Systems,IoT.
+                    </li>
+                    <li>
+                        It is used in System Programming.
+                    </li>
+                    <li>
+                        It is used in Graphics rendering and Game engines.
+                    </li>
+                    <li>
+                        It is used in Database Engines.
+                    </li>
+                    <li>
+                        It is used in Systems with focus on performance and efficiency etc,
+                    </li>
+                </ul>
+            <h3>
+                Application that use C++
+            </h3>
+                <ul>
+                    <li>
+                        Adobe Photoshop
+                    </li>
+                    <li>
+                        Spotify
+                    </li>
+                    <li>
+                        MySQL
+                    </li>
+                    <li>
+                        Unreal Engine
+                    </li>
+                    <li>
+                        Windows etc,
+                    </li>
+                </ul>
+        </details>
+        <details>
+            <summary class="df">Basics of C++</summary>
+            <details>
+            <summary class="sdf">Array</summary>
+            <ul>
+                <li>
+                    Array is a collection of items stored in a continuous memory location and those items are homogenous(same data type) in nature.
+                </li>
+                <li>
+                    In array the index value starts from 0 to n.
+                </li>
+                <li>
+                    Declaring array without out data/values holds the garbage data/values.
+                </li>
+                <li>
+                    We can declare array in 3 ways.
+                    <ol type="i">
+                        <li class="sdf">
+                            Decalring array and it's size.
+                            <pre>
+                                syntax :- 
+                                data_type array_name[size_of array];
+                                For example 
+                                int arr1[12];
+                            </pre>
+                        </li>
+                        <li class="sdf">
+                            Decalring array and it's size and assigning some data. 
+                            <pre>
+                                syntax :- 
+                                data_type array_name[size_of array] = {data1,data2,data3,data4,--------,datan};
+                                For example 
+                                int arr1[5] = {1,2,3,4};
+                            </pre>
+                        </li>
+                        <li class="sdf">
+                            Decalring array and assigning some data.In this case the size of array will be taken dynamically based on the data. 
+                            <pre>
+                                syntax :- 
+                                data_type array_name[] = {data1,data2,data3,data4,--------,datan};
+                                For example 
+                                int arr1[] = {1,2,3,4}; 
+                            </pre>
+                        </li>
+                    </ol>
+                    <li>
+                        Accessing array elements :-
+                                Accessing the array elements is also simple.We acess as 
+                                <pre>
+                                    syntax :-
+                                     data_type array_name[array_index];
+                                     For example
+                                     arr1[] = {1,2,3,4};
+                                     cout << arr1[0] << endl; //returns the 1 which in index 0.
+                                </pre>
+                    </li>
+                    <li>
+                        sizeof() :- To known the size of array we use sizeof().It gives values in bytes.
+                        <pre>
+                            For example
+                            int arr1[7];
+                            cout << sizeof(arr1/arr1[0]) << endl; //returns 7 which is the sizeof arr1.
+                            cout << sizeof(arr1) << endl; //It returns 28 size of array into bytes.
+                        </pre>
+                    </li>
+                    <li>
+                        Lets we array by using for loop
+                        <pre>
+                            #include &lt;iostream&gt;
+                            using namespace std;
+                            int main(){
+                                int arr[];
+                                for(int i=0;i<7;i++)
+                               {
+                                cout << arr[i];
+                               }
+                            return 0;
+                            }
+                        </pre>
+                    </li>
+                </li>
+            </ul>
+            </details>
+            <details>
+            <summary class="sdf">Conditional Statements</summary>
+            <h3>
+                What are condtional statements
+            </h3>
+            <ul>
+                <li>
+                    Condtional statements are also known as decision making statements,they help to take decision in a program on the basis of logical conditions.
+                </li>
+            </ul>
+            <h3>
+                Different conditional statements in C++
+            </h3>
+            <ul>
+                <li>
+                    if  
+                    <pre>
+                    syntax :- 
+                        if(condition){
+                            //Block of code;
+                        }
+                        Here,if the condition is true ,only then the block of code within the brackets is executed.
+                    </pre>
+                </li>
+                <li>
+                    if-else statement
+                    <pre>
+                        syntax :- 
+                        if(condition){
+                            //Block of code;
+                        }
+                        else{
+                            //Block of code;
+                        }
+                        Here,if the condition is true ,only then the block of code within the brackets is executed otherwise the block of code in the else part is executed.
+                    </pre>
+                </li>
+                <li>
+                    if-else if statement
+                    <pre>
+                        syntax :- 
+                         if(condition 1){
+                            //Block of code;
+                        }
+                        else if(condition 2){
+                            //Block of code;
+                        }
+                        else if(condition 3){
+                            //Block of code;
+                        }
+                        else if(condition 4){
+                            //Block of code;
+                        }
+                        else{
+                            //Block of code;
+                        }
+                        Here,if condition 1 is executed out of all the give blocks then only if condition is executed,
+                        similarly if condition 1 is fail then it check to condtion 2 if it is corrrect it executes,if condition 2 is wrong goes to next condition to execute.
+                        If all the condtions are wrong then the else part is executed.
+                    </pre>
+                </li>
+                <li>
+                    Nested if statement
+                    <pre>
+                       syntax :- 
+                       if(condition 1){
+                        if(inner condition 1){
+                            inner block 1
+                        }
+                        else{
+                            inner block 2
+                        }
+                       } 
+                       else if(condition 2){
+                        block of code
+                       }
+                       else{
+                        block odf code 
+                       } 
+                       There simple to understand the statements with if ,if-else, or if-else if.
+                    </pre>
+                </li>
+                <li>
+                    Switch Case statement <br>
+                    In Switch case, an expression is evaluated ,and the result of the expression is used to execute a set of statements associated to that value.They are used in place of longer if statements if we are constantly making comparsions to integral values.
+                    <pre>
+                        syntax :- 
+                        switch(n){
+                            case 1: //set of statements to execute if n=1
+                            break;
+                            case 2: //set of statements to execute if n=2
+                            break;
+                            case 3: //set of statements to execute if n=3
+                            break;
+                            case 4: //set of statements to execute if n=4
+                            break;
+                            default: //set of statements to execute if n matches none of the cases.
+                        }
+                    </pre>
+                </li>
+                <li>
+                    Example of all conditional statements
+                    <h3>
+                        Code
+                    </h3>
+                    <pre>
+                        #include &lt;iostream&gt;
+                        void isEven(int num)
+                        {
+                            if(num%2==0){
+                                std :: cout << num <<" is a even number";
+                            }
+                            else
+                            {
+                                std :: cout << num <<" is a odd number" ;
+                            }
+                        }
+                        void signIn(int num)
+                        {
+                            if(num > 0)
+                            {
+                                std :: cout << num <<" is a Positive Integer"; 
+                            }
+                            else if(num < 0)
+                            {
+                                std :: cout << num <<" is a Negative Integer"; 
+                            }
+                            else 
+                            {
+                                std :: cout << "It is a zero" ; 
+                            }
+                        }
+                        int main() {
+                            int num,choice;
+                            std :: cout << "1.Check if even \n";
+                            std :: cout << "2.Check the sign of the number \n";
+                            std :: cout << "3.exit \n";
+                            std :: cout << "Enter your choice :";
+                            std :: cin >> choice;
+                            switch(choice){
+                                case 1:
+                                std :: cout << "enter a number :";
+                                std :: cin >> num;
+                                isEven(num);
+                                break;
+                                case 2:
+                                std :: cout << "enter a number :";
+                                std :: cin >> num;
+                                signIn(num);
+                                break;
+                                case 3:
+                                std :: cout <<"exit"; 
+                                break;
+                                default:
+                                std :: cout <<"It's is wrong choice";
+                                break;
+                            }
+                            return 0;
+                        }
+                    </pre>
+                </li>
+            </ul>
+            </details>
+            <details>
+                <summary class="sdf">Functions</summary>
+                <ul>
+                    <li>
+                        Funtions are a block of code which are design to a particular task.
+                    </li>
+                    <li>
+                        It is used to promote modularity of code and reuseability of code.
+                    </li>
+                    <li>
+                        syntax :- 
+                        Function definition
+                        <pre>
+                            return_type Fuction_definition(parameters){
+                                //block of code;
+                                //return_type(optional);
+                            }
+                            It is where we actually define the fuction & logic of the function.
+                        </pre>
+                        Function Declaration
+                        <pre>
+                            Fuction_declaration : return_type function_name(formal parameters);
+                            fuction_declaration or fuction_called is used to call the fuction.
+                        </pre>
+                    </li>
+                    <li>
+                        For example
+                        <pre>
+                            Let us try a code to check weather the give year is leap year or normal year.
+                            #include &lt;iostream&gt
+                            using namespace std;
+                            void greeting(){
+                                std ::cout << "hello! \n";
+                            }
+                            bool isLeapYear(int year){
+                                if(year%100 == 0){
+                                    if(year%400 == 0){
+                                        return true;
+                                    }
+                                    else{
+                                        return false;
+                                    }
+                                }
+                                else if(year%4 == 0){
+                                    return true;
+                                }
+                                else{
+                                    return false;
+                                }
+                            }
+                            void checkIfLeapYear(int year){
+                                if(isLeapYear(year)){
+                                    std ::cout << year<<" is a Leap year!";
+                                }
+                                else{
+                                    std ::cout << year << " is not a Leap year!";
+                                }
+                            }
+                            int main(){
+                                int year;
+                                std ::cout << "Enter a year : ";
+                                std ::cin >> year;
+                                greeting();
+                                checkIfLeapYear(year);
+                                return 0;
+                            }
+                        </pre>
+                    </li>
+                </ul>
+            </details>
+            <details>
+                <summary class="sdf">Input/Output in C++</summary>
+                <h3>
+                    Input Output in C++
+                </h3>
+                <ul>
+                    <li>
+                        In C++,all input and output are performed on a sequence of bytes called stream. 
+                    </li>
+                    <li>
+                        If bytes follow from a device like a keybord, a disk drive,or a networkconnection etc.to main memory ,this is called input operation.
+                    </li>
+                    <li>
+                        If bytes flow from main memory to a device like a display screen, a printer, a disk drive, or a network connection, etc., this is called output operation.
+                    </li>
+                    <li>
+                        iostream library defines the clin, cout ,cerr objects for the standard input stream, standard output stream and standard error stream.
+                    </li>
+                    <li>
+                        fstream declare the services for user-controlled flie processing.
+                    </li>
+                </ul>
+                <h3>
+                    The different operators used for Input and Output.
+                </h3>
+                    <ul>
+                        <h3>
+                            Input in C++
+                        </h3>
+                        <li>
+                            In C++,standard input is done using the cin operator of the istream class.
+                        </li>
+                        <li>
+                            Used along with the extration operator(>>).
+                        </li>
+                        <li>
+                            Automatically type casts the inputted value to that of the variable.
+                        </li>
+                        <li>
+                            For strings,it takes the input to the first whitespace character.
+                        </li>
+                        <li>
+                            For inputting strings with whitespace character,there is getline() function.
+                        </li>
+                    </ul>
+                    <h3>
+                        Output on C++
+                    </h3>
+                    <ul>
+                        <li>
+                            In C++,standard output is done using the count operator of the ostream class.
+                        </li>
+                        <li>
+                            It is used to print to the console or other devices.
+                        </li>
+                        <li>
+                            Used along with the insertion operator(<<).
+                        </li>
+                        <li>
+                            Does not insert a new line character at the end of the output.
+                        </li>
+                    </ul>
+               <h3>
+                    Manipulators in C++
+                </h3>
+                    <ul>
+                        <li>
+                            Manipulators belong to the iomanip library.
+                        </li>
+                        <li>
+                            They are functions that help to modify what we are writing to the output stream.
+                        </li>
+                        <li>
+                            They help in formatting the output.
+                        </li>
+                        <li>
+                            some commonly used  manipulators are :- 
+                            <ol type="i">
+                                <li>
+                                    <strong class="sdf">endl</strong> : Used to enter a new line.
+                                </li>
+                                <li>
+                                    <strong class="sdf">setw(val)</strong> : It is used to set the width of the all field for the output operations.
+                                </li>
+                                <li>
+                                    <strong class="sdf">setfill(c)</strong> : used to fill the (leading) space of the width with character.
+                                </li>
+                                <li>
+                                    <strong class="sdf">left</strong> : aligns the output to the left of the width.
+                                </li>
+                                <li>
+                                    <strong class="sdf">right</strong> : aligns the output to the right of the width.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>Example code</h3>
+                            <pre>
+                                #include &lt;iostream&gt;
+                                using namespace std;
+                                int main(){
+                                    int num;
+                                    float dec;
+                                    char car;
+                                    string str;
+                                    std::cout << "Enter a number,decimal,character,string :";
+                                    std::cin >> num  >> dec >>car >>str;
+                                    std::cout << "int= "<< num << endl;
+                                    std::cout << "float= "<< dec << endl;
+                                    std::cout << "char= "<< car << endl;
+                                    std::cout << "string= "<< str << endl;
+                                    return 0;
+                                }
+                            </pre>
+                            <pre>
+                                #include <iostream>
+                                using namespace std;
+                                int main() {
+                                    int a;
+                                    string str1;
+                                    std ::cout << "Enter a numbers :";
+                                    std ::cin >> a ;
+                                    std ::cout << "enter a string :";
+                                    std ::cin >> str1;
+                                    std ::cout << "enter a sentence :";
+                                    std ::cin >> ws;
+                                    getline(cin,str1);
+                                    std ::cout << str1;
+                                    return 0;
+                                }
+                            </pre>
+                        </li>
+                    </ul>
+            </details>
+        </details>
+    </div>
+</body>
+</html>

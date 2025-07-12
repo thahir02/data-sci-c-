@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+body{
+    /* color: #780000; */
+    background-color: #669bbc; 
+    text-align: center;
+    padding-top: 50px;
+}
+.box {
+  width: 300px;
+  height: 150px;
+  background-color: #fdf0d5;
+  color: #c1121f;
+  font-size: 1.9rem;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #780000;
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+.content{
+  color: #fdf0d5;
+}
+.df{
+    color : #780000;
+}
+h3{
+    color: #003049;
+}
+
+
+
