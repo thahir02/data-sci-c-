@@ -564,7 +564,7 @@
                         If bytes flow from main memory to a device like a display screen, a printer, a disk drive, or a network connection, etc., this is called output operation.
                     </li>
                     <li>
-                        iostream library defines the clin, cout ,cerr objects for the standard input stream, standard output stream and standard error stream.
+                        iostream library defines the cin, cout ,cerr objects for the standard input stream, standard output stream and standard error stream.
                     </li>
                     <li>
                         fstream declare the services for user-controlled flie processing.
@@ -662,6 +662,31 @@
                                     return 0;
                                 }
                             </pre>
+                            <li>
+                                <h3>
+                                    getline()
+                                </h3>
+                                <ol>
+                                    <li>
+                                        It is used to read an entire line of text from an input stream, including spaces, and store it in a string variable
+                                    </li>
+                                    <li>
+                                        for example the difference between normal and getline method is :- <br>
+                                        1.string str ="String1";
+                                        2.getline() take input as "the is a Stirng getline method"; 
+                                    </li>
+                                    <li>
+                                        we can use getline() in two ways :
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>
+                                                getline(cin,string_Name,)
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
                             <pre>
                                 #include <iostream>
                                 using namespace std;
