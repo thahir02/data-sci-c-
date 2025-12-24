@@ -642,6 +642,19 @@
                                     <strong class="sdf">right</strong> : aligns the output to the right of the width.
                                 </li>
                             </ol>
+                            for example
+                            <pre>
+                                #include &lt;iostream&gt;
+                                #include &lt;iomanip&gt;
+                                using namespace std;
+                                int main() {
+                                    string s="Manipulators";
+                                    cout &lt;&lt; s &lt;&lt;endl;
+                                    cout &lt;&lt; setw(20) &lt;&lt; setfill('!');
+                                    cout &lt;&lt; right &lt;&lt; s &lt;&lt; endl;
+                                    return 0;
+                                }
+                            </pre>
                         </li>
                         <li>
                             <h3>Example code</h3>
@@ -676,19 +689,29 @@
                                         2.getline() take input as "the is a Stirng getline method"; 
                                     </li>
                                     <li>
-                                        we can use getline() in two ways :
+                                        we can use getline() in :
                                     </li>
                                     <li>
-                                        <ul>
+                                        <ol type="I">
                                             <li>
-                                                getline(cin,string_Name,)
+                                            Standard Usage (Most Common) : <br>
+                                               1.Standard Input: Reads from the keyboard until a newline is hit : syntax : getline(cin,string_Name) <br>
+                                               2.Custom Delimiter: Stops reading at a specific character (like a comma in CSV data) instead of a newline : syntax : getline(cin,string_Name,delimiter) <br>
+                                               3.File Reading: Reads text line-by-line from a file stream : syntax : getline(fileStream,string_Name)
                                             </li>
-                                        </ul>
+                                            <li>
+                                                Character Array (C-Style) Usage :
+                                                This is a member function of the istream class (part of &lt;iostream&gt;) and is used specifically for fixed-size character arrays (char[]). It requires you to specify a maximum buffer size to prevent memory overflows <br>
+                                                syntax : getline(charArray,size)
+                                                etc; <br>
+                                                these are some types of ways to represent the getline() function.
+                                            </li>
+                                        </ol>
                                     </li>
                                 </ol>
                             </li>
                             <pre>
-                                #include <iostream>
+                                #include &lt;iostream&gt;
                                 using namespace std;
                                 int main() {
                                     int a;
@@ -699,8 +722,36 @@
                                     std ::cin >> str1;
                                     std ::cout << "enter a sentence :";
                                     std ::cin >> ws;
+                                    //ws is like a keyword it means white space it takes all the white spaces present in the string.
                                     getline(cin,str1);
                                     std ::cout << str1;
+                                    return 0;
+                                }
+                            </pre>
+                        </li>
+                        <li>
+                            To clear the input butter before using new input(sentence) we use <br>
+                            cin.ignore() 
+                            <br>
+                            for example 
+                            <pre>
+                                #include <iostream>
+                                #include <string>  // Added for std::string and getline
+                                #include <limits>  // Added for numeric_limits
+                                using namespace std;
+                                int main() {
+                                    string str1, str2;
+                                    cout << "Enter a string (end with $):" << endl;
+                                    // cin >> ws skips leading whitespace before reading
+                                    getline(cin >> ws, str1, '$');
+                                    cout << "You entered: " << str1 << endl;
+                                    cout << "________________________" << endl;
+                                    // Clear the buffer of any characters left after the '$'
+                                    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                                    cout << "Enter a sentence:" << endl;
+                                    // Using ws again ensures any leftover newlines are skipped
+                                    getline(cin >> ws, str2);
+                                    cout << "You entered: " << str2 << endl;
                                     return 0;
                                 }
                             </pre>
