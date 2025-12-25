@@ -735,9 +735,9 @@
                             <br>
                             for example 
                             <pre>
-                                #include <iostream>
-                                #include <string>  // Added for std::string and getline
-                                #include <limits>  // Added for numeric_limits
+                                #include &lt;iostream&gt;
+                                #include &lt;string&gt;  // Added for std::string and getline
+                                #include &lt;limits&gt;  // Added for numeric_limits
                                 using namespace std;
                                 int main() {
                                     string str1, str2;
@@ -757,6 +757,142 @@
                             </pre>
                         </li>
                     </ul>
+            </details>
+            <details>
+                <summary class="sdf">Loops</summary>
+                <h3>
+                   Loops/Iterative Statements <br>
+                   what are loops
+                </h3>
+                <ul>
+                    <li>
+                       There may be a situation,when you need to execute a block of code several no.of times. 
+                    </li>
+                    <li>
+                        A loop statement allows us to execute a statement or group of statements multiple times
+                    </li>
+                    <li>
+                        Loop control statements change execution from its normal sequence.
+                    </li>
+                </ul>
+                <h3>
+                    Types of Loops
+                </h3>
+                <li>
+                    <bold class="sdf">For Loop</bold> : A for loop is a fundamental programming control structure used to execute a block of code repeatedly for a specific number of iterations or until a defined condition is met.<br>
+                    Syntax of for loop 
+                    <pre>
+                        for(initializtion;condition;updation){
+                            block of code/statements
+                        }
+                    </pre>
+                    In the for loop after innitializtion the control comes to check the condition if it is ture it eneters into block of statements after that it updates then ckeck the condition and goes on until it fails condition. <br>
+                    for example let us print positive even numbers until the given 'n' number
+                    <pre>
+                        #include <iostream>
+                        using namespace std;
+                        int main(){
+                        int n;
+                        cout<<"enter the positive number : ";
+                        cin>>n;
+                        if(n <= 0 || n==1){
+                            cout << "Invalid input!";
+                        return 1;
+                        }
+                        cout<<"Even numbers upto" << n<<" :";
+                        for(int i=2;i<=n;i=i+2){
+                        cout << i << " ";
+                        }
+                        return 0;
+                        }
+                    </pre>
+                </li>
+                <li>
+                    <b class="sdf">While Loop</b> : A while loop is a control flow statement that allows code to be executed repeatedly based on a given boolean condition. <br>
+                    syntax of while loop 
+                    <pre>
+                        initialization;
+                        while (condition) {
+                            // block of code/statements
+                            updation;
+                        }
+                    </pre>
+                    In a while loop, the condition is evaluated before the block of code is executed. If the condition is true, the code runs and then the variable is updated. If the condition is false at the very beginning, the code block is never executed.
+                    <br>
+                    for example printing positive odd numbers until 'n'
+                    <pre>
+                        #include &lt;iostream&gt;
+                        using namespace std;
+                        int main() {
+                            int n;
+                            cout << "Enter the positive number: ";
+                            cin >> n;
+
+                            if (n <= 0) {
+                                cout << "Invalid input!";
+                                return 1;
+                            }
+
+                            cout << "odd numbers up to " << n << ": ";
+                            int i = 1; // Initialization
+                            while (i <= n) { // Condition
+                                cout << i << " ";
+                                i = i + 2; // Updation
+                            }
+                            return 0;
+                        }
+                    </pre>
+                </li>
+                <li>
+                    <b class="sdf">Do While Loop</b> : A do-while loop is similar to a while loop, but with one key difference: it is an exit-controlled loop. This means the code block is executed at least once, regardless of whether the condition is true or false, because the condition is checked at the end.
+                    <br>
+                    syntax of do while loop 
+                    <pre>
+                        initialization;
+                        do {
+                            // block of code/statements
+                            updation;
+                        } while (condition);
+                    </pre>
+                    The control first enters the do block and executes the statements and updation. After the first run, it checks the condition. If the condition is true, it repeats; if false, the loop terminates.
+                    <br>
+                    for example printing positive even numbers until 'n'
+                    <pre>
+                        #include <iostream>
+                        using namespace std;
+                        int main() {
+                            int n;
+                            cout << "Enter the positive number: ";
+                            cin >> n;
+                            if (n <= 1) {
+                                cout << "Invalid input!";
+                                return 1;
+                            }
+                            cout << "Even numbers up to " << n << ": ";
+                            int i = 2; // Initialization
+                            do {
+                                cout << i << " ";
+                                i = i + 2; // Updation
+                            } while (i <= n); // Condition (checked at the end)
+                            return 0;
+                        }
+                    </pre>
+                </li>
+                <li>
+                    <b class="sdf">Nested Loops</b>
+                </li>
+                <h3>
+                    Types of Loop control Statements
+                </h3>
+                <li>
+                    <b class="sdf">break</b> : Used to come out of the loop
+                </li>
+                <li>
+                    <b class="sdf">continue</b> : Used to skip the next iteration
+                </li>
+                <li>
+                    <b class="sdf">goto</b> : Transfers control to the labeled statement.It is not advised to use goto statement in your program.
+                </li>
             </details>
         </details>
     </div>
