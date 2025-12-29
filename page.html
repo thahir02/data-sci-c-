@@ -985,7 +985,7 @@
                         <strong class="sdf">Note</strong>:It uses 0 to denote false and 1 to denote true.
                         for example
                         <pre>
-                            #include <iostream>
+                            #include &lt;iostream&gt;
                             using namespace std;
                             int main() {
                                 int a = 6, b = 4;
@@ -1006,10 +1006,56 @@
                         </pre>
                     </li>
                     <li>
-                        <strong class="sdf">Logical Operator</strong>
+                        <strong class="sdf">Logical Operator</strong>:It is used to combine two or more conditions or constraints or to complement the evaluation of the original condition in consideration. The result returns a Boolean value, i.e., true or false.Types are :
+                        <ol>
+                            <li>
+                                Logical AND(&&):Returns true only if all the operands are true or non-zero.
+                            </li>
+                            <li>
+                                Logical OR(||): Returns true if either of the operands is true or non-zero.
+                            </li>
+                            <li>
+                                Logical NOT(!):Returns true if the operand is false or zero.
+                            </li>
+                        </ol>
+                        For example 
+                        <pre>
+                            #include &lt;iostream&gt;
+                            using namespace std;
+                            int main() {
+                                int a = 6, b = 4;
+                                // Logical AND operator
+                                cout << "a && b is " << (a && b) << endl;
+                                // Logical OR operator
+                                cout << "a || b is " << (a || b) << endl;                  
+                                // Logical NOT operator
+                                cout << "!b is " << (!b);
+                                return 0;
+                            }
+                        </pre>
                     </li>
                     <li>
-                        <strong class="sdf">Bitwise</strong>
+                        <strong class="sdf">Bitwise</strong>:It works on bit-level. So, compiler first converted to bit-level and then the calculation is performed on the operands.Types are :
+                        <ol>
+                            <li>
+                               Binary AND(&):Copies a bit to the result if it exists in both operands. 
+                            </li>
+                            <li>
+                                Binary OR(|):Copies a bit to the result if it exists in any of the operands.
+                            </li>
+                            <li>
+                                Binary XOR(^):Copies the bit to the result if it is present in either of the operands but not both.
+                            </li>
+                            <li>
+                                Left Shift(<<):Shifts the value to the left by the number of bits specified by the right operand.
+                            </li>
+                            <li>
+                                Right Shift(>>):Shifts the value to the right by the number of bits specified by the right operand.
+                            </li>
+                            <li>
+                                One's Complement(~): Changes binary digits 1 to 0 and 0 to 1.
+                            </li>
+                        </ol>
                     </li>
                     <li>
                         <strong class="sdf">Ternary</strong>
